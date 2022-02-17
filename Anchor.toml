@@ -1,0 +1,14 @@
+[programs.localnet]
+stable_test = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+[programs.devnet]
+stable_test = "DHkf7V1VjWCdJDMGogvvGC2S2H7mSS4Cv6YBM1mw8mK1"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/john/.config/solana/devnet1.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
